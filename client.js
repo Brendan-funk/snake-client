@@ -6,7 +6,7 @@ const connect = function () {
   });
   conn.on('connect', () => {
     console.log('successful connection');
-    conn.write('Name: BZF');
+    conn.write('Name: BZF ,Message: Hello');
   })
   // interpret incoming data as text
   conn.setEncoding("utf8");
